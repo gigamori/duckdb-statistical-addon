@@ -1,0 +1,14 @@
+# IDE / Editor
+.cursor/
+.cursorignore
+.cursorindexingignore
+.roo/
+.rooignore
+AGENTS.md
+
+# Extensions
+.specstory/
+
+# OS
+.DS_Store
+Thumbs.db
