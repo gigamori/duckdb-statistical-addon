@@ -60,4 +60,5 @@ SELECT * FROM normalized_entropy_category_tbl((SELECT list(city) FROM sales_data
 | **Near 0.0** | **Low Information / Deterministic**<br>The data is concentrated on a single value or a very narrow range. |
 | **Near 1.0** | **High Information / Uniform**<br>The data is spread evenly across all bins or categories. |
 
+*   **NULLs** are excluded before calculation.
 *   **Note for IDs:** Do not use `normalized_entropy_category` on unique ID columns (e.g., UserID). It will always return `1.0` because every value is unique.

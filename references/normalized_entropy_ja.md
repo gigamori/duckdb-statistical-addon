@@ -59,4 +59,5 @@ SELECT * FROM normalized_entropy_category_tbl((SELECT list(category) FROM sales)
 | **Near 0.0** | データは特定の値に集中しており、情報量が少ない状態です。 |
 | **Near 1.0** | データは取りうる範囲全体に均等に散らばっています。 |
 
+*   **NULL**は計算前に除外される
 *   **注意:** ユーザーIDのような「全行ユニーク」なカラムに `normalized_entropy_category` を使用しないでください。常に `1.0` が返されます。

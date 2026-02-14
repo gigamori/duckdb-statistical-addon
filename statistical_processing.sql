@@ -331,7 +331,7 @@ CREATE OR REPLACE FUNCTION chi2_test(y_list HUGEINT[], x_list VARCHAR[]) AS TABL
       COUNT(*) - SUM(binary_val) as obs_0,
       COUNT(*) as n_i
     FROM data
-    WHERE category IS NOT NULL AND binary_val IS NOT NULL
+    WHERE category IS NOT NULL AND binary_val IN (0, 1)
     GROUP BY category
   ),
   overall_stats AS (

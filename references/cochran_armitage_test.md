@@ -24,6 +24,7 @@ Cochran–Armitage trend test.
 
 ## Notes
 
+- NULLs are excluded pairwise.
 - Categories are automatically scored 0, 1, 2, ...
 - Returns no rows when requirements for the test are not met.
 

@@ -19,7 +19,7 @@ Pearson χ² test of independence for binary outcomes.
 
 ## Notes
 
-- Non 0/1 values are dropped during aggregation.
+- NULLs and non 0/1 values are excluded pairwise.
 - Expected counts use the pooled success rate.
 
 ## Example

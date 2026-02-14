@@ -25,6 +25,7 @@ Generalized Cochran–Mantel–Haenszel correlation test with stratification.
 
 ## Notes
 
+- NULLs are excluded pairwise.
 - Strata with fewer than two observations are ignored.
 - Exposure labels are ranked in ascending order for scoring.
 - Ordinal scores allow extension beyond 0/1 outcomes; bin continuous values (e.g., median per bin) before passing them into `y_score_list`.
